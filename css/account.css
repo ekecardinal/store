@@ -1,0 +1,233 @@
+* {box-sizing: border-box}
+@import url('https://fonts.googleapis.com/css?family=Anton|Arvo|Baskervville|Gugi|Lato|Roboto|Sofia&display=swap');
+
+:root {
+    --light-gray: #2b3032a1;
+    --primary-color: #007b5e;
+    --border: #2b303218;
+    --text-color: #ff686b;
+    --roboto: "Roboto", sans-serif;
+    --gugi: "Gugi", cursive;
+    --sofia: "Sofia", cursive;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+.bg-primary-color {
+    background-color: var(--primary-color) !important;
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.font-roboto {
+    color: var(--roboto);
+}
+
+.lightblue {
+    color: lightblue;
+}
+
+header {
+    background-color: var(--primary-color);
+    font-family: var(--roboto);
+}
+
+header.font-title {
+    font-family: var(--gugi);
+}
+
+.container.dropdown-toggle
+.container.dropdown-item {
+    font-size: 0.7em;
+}
+
+.header-links a{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links, li:hover a {
+    font-weight: 700;
+}
+
+/* Navigation menu */
+
+.navbar-nav{
+    padding: 0.8em 0em;
+}
+
+.navbar-nav.nav-link {
+    font-size: 0.9em;
+    color: var(--light-gray)!important;
+}
+
+.navbar-nav.nav-item.nav-link {
+    padding: 0 1.3em;
+}
+
+.navbar-nav.basket-icon {
+     margin-right: 6.5rem !important;
+}
+
+
+/* Add padding to container */
+.container {
+    padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr{
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* set a style 4 d submit(register) button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #007b5e !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+/* Product Landing Page */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
